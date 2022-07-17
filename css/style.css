@@ -1,0 +1,356 @@
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #522c00; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #964b00; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  /*background: #b30000;*/
+  background: #964b00;
+
+}
+
+body, header, .card ,.margens, .modal-body1, input {
+  /*cor de fundo*/
+  background-color: white !important;
+}
+
+input {
+  background-color: white !important;
+}
+
+.castanho-escuro {
+  background-color: #522c00 !important;
+  color:rgb(192, 192, 192);
+}
+
+.castanho-escuro-letra {
+  background-color: white !important;
+  color: #522c00;
+}
+
+.castanho-claro{
+  background-color: #964b00; 
+  color: white;
+}
+
+.branco-letra {
+  color: white;
+}
+
+.branco-letra, .far {
+  color: white;
+}
+
+a:link, a:visited, a:hover, a:active{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.azul-link:link, .azul-link:visited, .azul-link:hover, .azul-link:active{
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.castanho-escuro-link:link, .castanho-escuro-link:visited, .castanho-escuro-link:hover, .castanho-escuro-link:active{
+  color: #331800;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Bauhaus 93";
+}
+
+.margens {
+	margin-right:25px;
+	margin-left:25px;
+	padding:25px;
+}
+
+.margem-login {
+	margin-right:400px;
+	margin-left:400px;
+	padding:25px;
+}
+
+.centro {
+  text-align: center;
+}
+
+::placeholder, label, .negrito{
+  color: black;
+  font-weight: bold;
+  opacity: 1; 
+}
+
+.alinhamento-direita{
+  position:absolute;
+  right:0px;
+  width:300px;
+}
+
+.alinhamento-esquerda{
+  position:absolute;
+  width:300px;
+}
+
+.contentor{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  justify-content: flex-start;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.coluna-3-produtos{
+  margin: 0 1rem 1rem 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.carrinho {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	align-items: flex-start;
+	row-gap: 15px;
+	justify-content: center;
+	flex-direction: column;
+	padding: 8px;
+}
+
+.item_carrinho {
+	width: 90%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-direction: row;
+	padding: 8px;
+}
+
+.item_carrinho a {
+	text-decoration: none;
+}
+
+.carrinho_footer {
+	width: 90%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-direction: row;
+	background-color: #964b00;
+	color: white;
+	padding: 8px;
+}
+
+.carrinho_footer a {
+	text-decoration: none;
+}
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  background-color:black;
+  color: black;
+}
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  height: 16px;
+  width: 16px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a light brown background */
+.container input:checked ~ .checkmark {
+  background-color: #964b00;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* The Modal (background) */
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content1 {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close1 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header1 {
+  padding: 2px 16px;
+  background-color: #331800;
+  color: white;
+}
+
+.modal-body1 {
+  padding: 2px 16px;
+}
+
+.modal-footer1 {
+  padding: 2px 16px;
+  background-color: #331800;
+  color: white;
+}
+
+.imagem-exemplo-produto {
+  max-width: 150px;
+  height: auto;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+footer {
+    background-color: white;
+    color: white;
+}
