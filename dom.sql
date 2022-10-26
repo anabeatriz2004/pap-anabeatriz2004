@@ -186,5 +186,5 @@ INSERT INTO utilizadores (Tipo_ID, Nome, Apelido, Email, `Password`, Telemovel, 
 	Morada, CodPostal, Localidade, Porta) VALUES
 (1, 'Ana Beatriz', 'Vicente', 'vicente.anab@gmail.com', /*Pass: 123456*/ '*6BB4837EB74329105EE4568DDA7DC67ED2CA2AD9', '932698462', '123456789',
 	'Quinta de Coenços, Cabouco, Ceira, Coimbra', '3030-850', 'Coimbra', ''),
-(0, 'Admin', 'Admin', 'admin@euqueriaterodom.com', '*511CCED7281701D864CDEE91304A0BAAD30DF33E', 0, 0,
+(0, 'Administrador(a)', '', 'admin@euqueriaterodom.com', /*Pass: Admin2021*/'*34A58E44DC0FFF41D7D75E395E53B2187A4E521A', 0, 0,
 	'', '', '', '');
