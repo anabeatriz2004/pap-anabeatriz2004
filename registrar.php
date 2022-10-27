@@ -148,6 +148,18 @@
 		</div>
 
 		<!--Password-->
+		<script>
+			function mostrarOcultarPassword(){
+				var password = document.getElementById("inputPassword");
+				if (password.type=="password"){
+					password.type="text";
+				}
+				else{
+					password.type="password";
+				}
+			}
+		</script>
+
 		<div class="col-md-6">
 			<label for="inputPassword4" class="form-label">Password*</label>
 			<input name="Password" type="password" class="form-control" id="inputPassword" value="<?php if (!empty($_POST['Password'])) echo $_POST['Password']; ?>" placeholder="Password">
@@ -156,9 +168,27 @@
 						<?php echo $ErroPassword; ?>
 					</span>
 			<?php } ?>
+
+			<label class="container"> 
+				<small> Mostrar Senha </small>
+  				<input type="checkbox" onclick="mostrarOcultarPassword()">
+  				<span class="checkmark"> </span>
+			</label>
 		</div>
 
 		<!--Confirmar Password-->
+		<script>
+			function mostrarOcultarConfirmPassword(){
+				var password = document.getElementById("inputConfirmaPassword");
+				if (password.type=="password"){
+					password.type="text";
+				}
+				else{
+					password.type="password";
+				}
+			}
+		</script>
+
 		<div class="col-md-6">
 			<label for="inputPassword4" class="form-label"> Confirmar Password*</label>
 			<input name="ConfirmaPassword" type="password" class="form-control" id="inputConfirmaPassword" value="<?php if (!empty($_POST['Password'])) echo $_POST['Password']; ?>">
@@ -168,6 +198,12 @@
 						</div>
 					</span>
 			<?php } ?>
+
+			<label class="container"> 
+				<small> Mostrar Senha </small>
+  				<input type="checkbox" onclick="mostrarOcultarConfirmPassword()">
+  				<span class="checkmark"> </span>
+			</label>
 		</div>
 		
 		<?php  
