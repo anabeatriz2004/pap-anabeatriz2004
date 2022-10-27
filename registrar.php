@@ -28,14 +28,13 @@
 </head>
 	
 	<br>
-
+<!--Para fazer a margens-->
+<div class="margens">	
 	<div class="alert castanho-escuro" role="alert">
 		<i style='font-size:24px' class='fas'>&#xf129;</i>
 		<strong>Campos marcados com * são obrigatórios</strong>
 	</div>
-	
-<!--Para fazer a margens-->
-<div class="margens">		
+		
 	<?php
 		if ($_SERVER['REQUEST_METHOD'] == 'POST')
 		{
@@ -122,9 +121,11 @@
 		}
 	?>
 	
+	<br><br>
+
 	<!--Formulário-->
 	<form id="fromRegisto" name="DadosClientes" class="form row g-3" onSubmit="return validate();" action="registrar.php" method="post" role="form">
-	
+
 		<h4 class="centro">Criar Conta</h4>
 		<hr>
 	
