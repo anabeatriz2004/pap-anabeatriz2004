@@ -26,7 +26,7 @@
 			?>
 
 			<div>	
-				<img class="imagem-exemplo-produto" src="img/<?php echo $Produto['Img']; ?>" alt="Avatar" style="width:100%">
+				<img class="imagem-exemplo-produto" src="img/<?php echo $Produto['Img']; ?>" alt="<?php echo $Produto['Descricao']; ?>" style="width:100%">
 				<div>
 					<p><b><?php echo $Produto['Designacao']; ?></b></p>
 					<p><?php echo $Produto['Preco']; ?>€</p>
