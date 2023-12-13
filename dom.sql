@@ -27,7 +27,7 @@ USE dom;
 
 CREATE TABLE tipo_produtos (
     ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    Designacao VARCHAR(225) NOT NULL
+	Designacao VARCHAR(225) NOT NULL
 );
 
 CREATE TABLE produtos(
